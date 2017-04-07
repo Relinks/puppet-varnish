@@ -68,7 +68,7 @@ class varnish (
   unless is_integer($max_threads) { fail('max_threads invalid') }
   validate_absolute_path($storage_file)
   validate_hash($runtime_params)
-  validate_re($varnish_version, '^[3-4]\.\d')
+  validate_re($varnish_version, '^[3-5]\.\d')
   validate_re($storage_type, '^(malloc|file)$')
 
   if ($addrepo) {
